@@ -1,3 +1,110 @@
-# ai-driven-development-workshop-template
+# 工場設備管理システム - デモプロジェクト
 
-## AI-Driven Development Workshop 👉 [Link](https://dev-lab-io.github.io/aoai/scenario2/home)
+## プロジェクト概要
+
+このデモプロジェクトは、工場設備管理アプリのプロトタイプ開発をテーマとしています。工場内の設備の稼働状況やメンテナンス情報を一元管理し、効率的な運用をサポートすることを目的としています。
+
+### プロジェクトの目的
+
+- **設備の稼働状況のリアルタイム監視**: センサーを活用して、設備の稼働状況をリアルタイムで監視します
+- **メンテナンス管理**: 設備のメンテナンススケジュールを管理し、予防保全を実現します
+- **データ分析**: 設備の稼働データを分析し、効率的な運用方法を提案します
+
+### 使用技術
+
+#### フロントエンド
+- **Vue.js 3**: ユーザーインターフェース構築
+- **Vue Router**: 画面遷移管理
+- **HTML5/CSS3**: レスポンシブデザイン
+
+#### バックエンド・クラウド
+- **Azure Functions**: データの処理や分析
+- **Azure SQL Database**: 収集したデータの保存
+- **Azure Cosmos DB**: IoTデバイスからのデータをリアルタイムで処理
+- **Power BI**: データの可視化と分析結果の共有
+
+### 期待される成果
+
+- 設備の稼働状況をリアルタイムで把握することで、ダウンタイムを削減
+- メンテナンスの効率化により、設備の寿命を延長
+- データに基づいた運用改善提案により、生産性を向上
+
+## プロジェクト構成
+
+```
+factory-equipment-management/
+├── src/                          # Vue.jsアプリケーションソース
+│   ├── main.js                   # アプリケーションエントリーポイント
+│   ├── App.vue                   # ルートコンポーネント
+│   └── components/               # Vue.jsコンポーネント
+│       ├── EquipmentList.vue     # 設備一覧コンポーネント
+│       ├── EquipmentDetail.vue   # 設備詳細コンポーネント
+│       └── MaintenanceManager.vue # メンテナンス管理コンポーネント
+├── public/                       # 静的ファイル
+│   └── index.html               # HTMLテンプレート
+├── docs/                        # ドキュメント
+│   └── azure-infrastructure-setup.md # Azure環境構築手順
+├── package.json                 # Node.js依存関係
+└── README.md                    # このファイル
+```
+
+## クイックスタート
+
+### 1. 依存関係のインストール
+
+```bash
+npm install
+```
+
+### 2. 開発サーバーの起動
+
+```bash
+npm run serve
+```
+
+### 3. ブラウザでアプリケーションにアクセス
+
+```
+http://localhost:8080
+```
+
+## 機能紹介
+
+### 設備一覧画面
+- 工場内の全設備の稼働状況を一覧表示
+- リアルタイムでのステータス監視
+- フィルター機能（ステータス、エリア別）
+
+### 設備詳細画面
+- 個別設備の詳細情報表示
+- センサーデータのリアルタイム監視
+- メンテナンス履歴の表示
+
+### メンテナンス管理画面
+- メンテナンススケジュールの管理
+- タスクの進捗管理
+- 新規メンテナンスタスクの追加
+
+## Azure環境構築
+
+Azureクラウド環境の構築については、以下のドキュメントを参照してください：
+
+📖 [Azure インフラストラクチャ設定手順](./docs/azure-infrastructure-setup.md)
+
+## 開発条件
+
+- **データセット**: 本デモでは、架空の工場の設備データを使用
+- **開発環境**: Visual Studio Code などのコードエディタを使用
+- **言語**: JavaScript (Vue.js), HTML, CSS
+- **デプロイ先**: Azure クラウド上にデプロイ
+- **開発手法**: AI-Driven Development を採用
+
+## ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています。詳細は[LICENSE](./LICENSE)ファイルを参照してください。
+
+## AI-Driven Development Workshop
+
+このプロジェクトは以下のワークショップの一環として作成されました：
+
+👉 [AI-Driven Development Workshop](https://dev-lab-io.github.io/aoai/scenario2/home)

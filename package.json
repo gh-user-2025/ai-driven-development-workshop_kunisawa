@@ -1,0 +1,34 @@
+{
+  "name": "factory-equipment-management",
+  "version": "1.0.0",
+  "description": "工場設備管理アプリプロトタイプ - 設備の稼働状況監視とメンテナンス管理",
+  "main": "main.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "dev": "vue-cli-service serve --port 3000"
+  },
+  "keywords": [
+    "vue",
+    "factory",
+    "equipment",
+    "management",
+    "azure",
+    "iot"
+  ],
+  "author": "AI-Driven Development Workshop",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "webpack": "^5.88.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
