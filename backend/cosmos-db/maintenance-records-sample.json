@@ -1,0 +1,299 @@
+[
+  {
+    "id": "maintenance_001",
+    "equipmentId": "1",
+    "equipmentName": "射出成形機A-01",
+    "factoryId": "1",
+    "factoryName": "東京第一工場",
+    "maintenanceType": "定期点検",
+    "description": "月次定期点検を実施。シリンダヘッド部の清掃、潤滑油の補充を行いました。",
+    "technicianName": "田中太郎",
+    "technicianId": "tech001",
+    "startTime": "2023-12-25T08:00:00Z",
+    "endTime": "2023-12-25T10:00:00Z",
+    "duration": 120,
+    "cost": 15000,
+    "partsUsed": [
+      {
+        "partName": "潤滑油",
+        "quantity": "2L",
+        "cost": 5000
+      },
+      {
+        "partName": "エアフィルター",
+        "quantity": "1個",
+        "cost": 3000
+      }
+    ],
+    "status": "完了",
+    "checklistItems": [
+      {
+        "item": "外観点検",
+        "completed": true,
+        "notes": "異常なし"
+      },
+      {
+        "item": "潤滑油レベル確認",
+        "completed": true,
+        "notes": "補充実施"
+      },
+      {
+        "item": "温度センサー校正",
+        "completed": true,
+        "notes": "正常"
+      }
+    ],
+    "createdAt": "2023-12-25T08:00:00Z",
+    "updatedAt": "2023-12-25T10:00:00Z"
+  },
+  {
+    "id": "maintenance_002",
+    "equipmentId": "3",
+    "equipmentName": "プレス機B-01",
+    "factoryId": "1",
+    "factoryName": "東京第一工場",
+    "maintenanceType": "部品交換",
+    "description": "油圧ポンプのシールを交換しました。",
+    "technicianName": "山田二郎",
+    "technicianId": "tech002",
+    "startTime": "2023-12-29T09:00:00Z",
+    "endTime": "2023-12-29T13:00:00Z",
+    "duration": 240,
+    "cost": 45000,
+    "partsUsed": [
+      {
+        "partName": "油圧シール一式",
+        "quantity": "1セット",
+        "cost": 35000
+      },
+      {
+        "partName": "作動油",
+        "quantity": "5L",
+        "cost": 8000
+      }
+    ],
+    "status": "完了",
+    "checklistItems": [
+      {
+        "item": "旧シール取り外し",
+        "completed": true,
+        "notes": "摩耗確認"
+      },
+      {
+        "item": "新シール取り付け",
+        "completed": true,
+        "notes": "トルク規定値で締付"
+      },
+      {
+        "item": "作動油交換",
+        "completed": true,
+        "notes": "新油に全量交換"
+      },
+      {
+        "item": "圧力テスト",
+        "completed": true,
+        "notes": "正常圧力確認"
+      }
+    ],
+    "createdAt": "2023-12-29T09:00:00Z",
+    "updatedAt": "2023-12-29T13:00:00Z"
+  },
+  {
+    "id": "maintenance_003",
+    "equipmentId": "6",
+    "equipmentName": "CNC旋盤C-01",
+    "factoryId": "2",
+    "factoryName": "大阪製造工場",
+    "maintenanceType": "緊急修理",
+    "description": "主軸ベアリングの異音により緊急停止。ベアリング交換を実施中。",
+    "technicianName": "高橋健二",
+    "technicianId": "tech003",
+    "startTime": "2023-12-31T14:00:00Z",
+    "endTime": null,
+    "duration": null,
+    "cost": null,
+    "partsUsed": [
+      {
+        "partName": "主軸ベアリング",
+        "quantity": "1個",
+        "cost": 120000,
+        "deliveryStatus": "納期待ち"
+      }
+    ],
+    "status": "作業中",
+    "urgency": "高",
+    "estimatedCompletionTime": "2024-01-02T16:00:00Z",
+    "checklistItems": [
+      {
+        "item": "主軸分解",
+        "completed": true,
+        "notes": "ベアリング損傷確認"
+      },
+      {
+        "item": "新ベアリング取り付け",
+        "completed": false,
+        "notes": "部品納期待ち"
+      },
+      {
+        "item": "組み立て・調整",
+        "completed": false,
+        "notes": "未実施"
+      }
+    ],
+    "createdAt": "2023-12-31T14:00:00Z",
+    "updatedAt": "2024-01-01T09:00:00Z"
+  },
+  {
+    "id": "maintenance_004",
+    "equipmentId": "11",
+    "equipmentName": "3Dプリンタ01",
+    "factoryId": "3",
+    "factoryName": "名古屋技術センター",
+    "maintenanceType": "予防保全",
+    "description": "プリントヘッドのノズル清掃とキャリブレーション調整",
+    "technicianName": "小林寛",
+    "technicianId": "tech004",
+    "startTime": "2024-01-01T10:00:00Z",
+    "endTime": "2024-01-01T12:00:00Z",
+    "duration": 120,
+    "cost": 8000,
+    "partsUsed": [
+      {
+        "partName": "清掃キット",
+        "quantity": "1セット",
+        "cost": 3000
+      }
+    ],
+    "status": "完了",
+    "checklistItems": [
+      {
+        "item": "ノズル清掃",
+        "completed": true,
+        "notes": "詰まり除去完了"
+      },
+      {
+        "item": "ベッドレベリング",
+        "completed": true,
+        "notes": "水平調整完了"
+      },
+      {
+        "item": "温度キャリブレーション",
+        "completed": true,
+        "notes": "規定温度で安定"
+      },
+      {
+        "item": "テストプリント",
+        "completed": true,
+        "notes": "品質良好"
+      }
+    ],
+    "createdAt": "2024-01-01T10:00:00Z",
+    "updatedAt": "2024-01-01T12:00:00Z"
+  },
+  {
+    "id": "maintenance_005",
+    "equipmentId": "9",
+    "equipmentName": "溶接ロボットE-01",
+    "factoryId": "2",
+    "factoryName": "大阪製造工場",
+    "maintenanceType": "定期点検",
+    "description": "四半期定期点検。アーム部の潤滑、電気系統の点検を実施予定。",
+    "technicianName": "佐藤花子",
+    "technicianId": "tech005",
+    "startTime": "2024-01-05T08:00:00Z",
+    "endTime": null,
+    "duration": null,
+    "cost": null,
+    "partsUsed": [],
+    "status": "予定",
+    "scheduledDuration": 180,
+    "estimatedCost": 25000,
+    "checklistItems": [
+      {
+        "item": "アーム部潤滑",
+        "completed": false,
+        "notes": ""
+      },
+      {
+        "item": "電気系統点検",
+        "completed": false,
+        "notes": ""
+      },
+      {
+        "item": "溶接トーチ点検",
+        "completed": false,
+        "notes": ""
+      },
+      {
+        "item": "制御プログラム確認",
+        "completed": false,
+        "notes": ""
+      }
+    ],
+    "createdAt": "2024-01-01T15:00:00Z",
+    "updatedAt": "2024-01-01T15:00:00Z"
+  },
+  {
+    "id": "maintenance_006",
+    "equipmentId": "1",
+    "equipmentName": "射出成形機A-01",
+    "factoryId": "1",
+    "factoryName": "東京第一工場",
+    "maintenanceType": "改良工事",
+    "description": "温度制御システムのアップグレード。より精密な温度管理を実現。",
+    "technicianName": "田中太郎",
+    "technicianId": "tech001",
+    "startTime": "2024-01-10T08:00:00Z",
+    "endTime": null,
+    "duration": null,
+    "cost": null,
+    "partsUsed": [
+      {
+        "partName": "新型温度コントローラー",
+        "quantity": "1台",
+        "cost": 180000,
+        "deliveryStatus": "発注済み"
+      },
+      {
+        "partName": "高精度温度センサー",
+        "quantity": "2個",
+        "cost": 50000,
+        "deliveryStatus": "発注済み"
+      }
+    ],
+    "status": "予定",
+    "scheduledDuration": 480,
+    "estimatedCost": 350000,
+    "projectManager": "鈴木一郎",
+    "approvalStatus": "承認済み",
+    "checklistItems": [
+      {
+        "item": "既存システム撤去",
+        "completed": false,
+        "notes": ""
+      },
+      {
+        "item": "新システム設置",
+        "completed": false,
+        "notes": ""
+      },
+      {
+        "item": "配線工事",
+        "completed": false,
+        "notes": ""
+      },
+      {
+        "item": "システム設定・調整",
+        "completed": false,
+        "notes": ""
+      },
+      {
+        "item": "動作確認テスト",
+        "completed": false,
+        "notes": ""
+      }
+    ],
+    "createdAt": "2024-01-01T16:00:00Z",
+    "updatedAt": "2024-01-01T16:00:00Z"
+  }
+]

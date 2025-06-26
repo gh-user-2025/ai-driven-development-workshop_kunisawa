@@ -1,0 +1,106 @@
+{
+  "indexingMode": "consistent",
+  "automatic": true,
+  "includedPaths": [
+    {
+      "path": "/sensorId/?",
+      "indexes": [
+        {
+          "kind": "Range",
+          "dataType": "String",
+          "precision": -1
+        }
+      ]
+    },
+    {
+      "path": "/timestamp/?",
+      "indexes": [
+        {
+          "kind": "Range",
+          "dataType": "DateTime",
+          "precision": -1
+        }
+      ]
+    },
+    {
+      "path": "/value/?",
+      "indexes": [
+        {
+          "kind": "Range",
+          "dataType": "Number",
+          "precision": -1
+        }
+      ]
+    },
+    {
+      "path": "/quality/?",
+      "indexes": [
+        {
+          "kind": "Hash",
+          "dataType": "String",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "path": "/equipmentId/?",
+      "indexes": [
+        {
+          "kind": "Range",
+          "dataType": "String",
+          "precision": -1
+        }
+      ]
+    },
+    {
+      "path": "/factoryId/?",
+      "indexes": [
+        {
+          "kind": "Range",
+          "dataType": "String",
+          "precision": -1
+        }
+      ]
+    }
+  ],
+  "excludedPaths": [
+    {
+      "path": "/annotations/*"
+    },
+    {
+      "path": "/_etag/?"
+    }
+  ],
+  "compositeIndexes": [
+    [
+      {
+        "path": "/sensorId",
+        "order": "ascending"
+      },
+      {
+        "path": "/timestamp",
+        "order": "descending"
+      }
+    ],
+    [
+      {
+        "path": "/equipmentId",
+        "order": "ascending"
+      },
+      {
+        "path": "/timestamp",
+        "order": "descending"
+      }
+    ],
+    [
+      {
+        "path": "/factoryId",
+        "order": "ascending"
+      },
+      {
+        "path": "/timestamp",
+        "order": "descending"
+      }
+    ]
+  ]
+}

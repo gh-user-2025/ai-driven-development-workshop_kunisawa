@@ -1,0 +1,212 @@
+[
+  {
+    "id": "factory_1",
+    "factoryId": "1",
+    "factoryName": "東京第一工場",
+    "location": "東京都大田区羽田1-1-1",
+    "contactPerson": "田中太郎",
+    "phoneNumber": "03-1234-5678",
+    "equipment": [
+      {
+        "equipmentId": "1",
+        "equipmentName": "射出成形機A-01",
+        "equipmentType": "射出成形機",
+        "modelNumber": "INJ-2000X",
+        "manufacturer": "山田機械工業",
+        "installationDate": "2020-04-15",
+        "status": "稼働中",
+        "sensors": [
+          {
+            "sensorId": "1",
+            "sensorName": "シリンダ温度センサー",
+            "sensorType": "温度",
+            "unit": "℃",
+            "minValue": 0,
+            "maxValue": 300,
+            "warningThreshold": 250,
+            "alertThreshold": 280,
+            "location": "シリンダヘッド部"
+          },
+          {
+            "sensorId": "2",
+            "sensorName": "射出圧力センサー",
+            "sensorType": "圧力",
+            "unit": "MPa",
+            "minValue": 0,
+            "maxValue": 200,
+            "warningThreshold": 150,
+            "alertThreshold": 180,
+            "location": "射出部"
+          }
+        ]
+      },
+      {
+        "equipmentId": "2",
+        "equipmentName": "射出成形機A-02",
+        "equipmentType": "射出成形機",
+        "modelNumber": "INJ-2000X",
+        "manufacturer": "山田機械工業",
+        "installationDate": "2020-04-20",
+        "status": "稼働中",
+        "sensors": []
+      },
+      {
+        "equipmentId": "3",
+        "equipmentName": "プレス機B-01",
+        "equipmentType": "プレス機",
+        "modelNumber": "PRESS-500T",
+        "manufacturer": "東京プレス",
+        "installationDate": "2019-03-10",
+        "status": "稼働中",
+        "sensors": [
+          {
+            "sensorId": "5",
+            "sensorName": "プレス圧力センサー",
+            "sensorType": "圧力",
+            "unit": "MPa",
+            "minValue": 0,
+            "maxValue": 50,
+            "warningThreshold": 45,
+            "alertThreshold": 48,
+            "location": "プレス部"
+          },
+          {
+            "sensorId": "6",
+            "sensorName": "油圧温度センサー",
+            "sensorType": "温度",
+            "unit": "℃",
+            "minValue": 0,
+            "maxValue": 80,
+            "warningThreshold": 70,
+            "alertThreshold": 75,
+            "location": "油圧タンク"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "factory_2",
+    "factoryId": "2",
+    "factoryName": "大阪製造工場",
+    "location": "大阪府堺市西区鳳東町2-2-2",
+    "contactPerson": "佐藤花子",
+    "phoneNumber": "06-2345-6789",
+    "equipment": [
+      {
+        "equipmentId": "6",
+        "equipmentName": "CNC旋盤C-01",
+        "equipmentType": "CNC旋盤",
+        "modelNumber": "CNC-TURN5",
+        "manufacturer": "大阪精機",
+        "installationDate": "2018-12-01",
+        "status": "稼働中",
+        "sensors": [
+          {
+            "sensorId": "8",
+            "sensorName": "主軸温度センサー",
+            "sensorType": "温度",
+            "unit": "℃",
+            "minValue": 0,
+            "maxValue": 100,
+            "warningThreshold": 80,
+            "alertThreshold": 90,
+            "location": "主軸部"
+          },
+          {
+            "sensorId": "9",
+            "sensorName": "主軸回転数センサー",
+            "sensorType": "回転数",
+            "unit": "rpm",
+            "minValue": 0,
+            "maxValue": 4000,
+            "warningThreshold": 3500,
+            "alertThreshold": 3800,
+            "location": "主軸"
+          }
+        ]
+      },
+      {
+        "equipmentId": "9",
+        "equipmentName": "溶接ロボットE-01",
+        "equipmentType": "溶接ロボット",
+        "modelNumber": "WELD-BOT7",
+        "manufacturer": "関西ロボット",
+        "installationDate": "2021-03-20",
+        "status": "稼働中",
+        "sensors": [
+          {
+            "sensorId": "13",
+            "sensorName": "溶接電流センサー",
+            "sensorType": "電流",
+            "unit": "A",
+            "minValue": 0,
+            "maxValue": 500,
+            "warningThreshold": 400,
+            "alertThreshold": 450,
+            "location": "溶接部"
+          }
+        ]
+      }
+    ],
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-01T00:00:00Z"
+  },
+  {
+    "id": "factory_3",
+    "factoryId": "3",
+    "factoryName": "名古屋技術センター",
+    "location": "愛知県名古屋市港区3-3-3",
+    "contactPerson": "鈴木一郎",
+    "phoneNumber": "052-3456-7890",
+    "equipment": [
+      {
+        "equipmentId": "11",
+        "equipmentName": "3Dプリンタ01",
+        "equipmentType": "3Dプリンタ",
+        "modelNumber": "3DP-METAL",
+        "manufacturer": "愛知3D",
+        "installationDate": "2022-01-10",
+        "status": "稼働中",
+        "sensors": [
+          {
+            "sensorId": "16",
+            "sensorName": "ノズル温度センサー",
+            "sensorType": "温度",
+            "unit": "℃",
+            "minValue": 0,
+            "maxValue": 300,
+            "warningThreshold": 250,
+            "alertThreshold": 280,
+            "location": "プリントヘッド"
+          },
+          {
+            "sensorId": "17",
+            "sensorName": "ベッド温度センサー",
+            "sensorType": "温度",
+            "unit": "℃",
+            "minValue": 0,
+            "maxValue": 100,
+            "warningThreshold": 80,
+            "alertThreshold": 90,
+            "location": "プリントベッド"
+          }
+        ]
+      },
+      {
+        "equipmentId": "14",
+        "equipmentName": "包装機H-01",
+        "equipmentType": "包装機",
+        "modelNumber": "PACK-AUTO",
+        "manufacturer": "包装機械",
+        "installationDate": "2021-08-25",
+        "status": "メンテナンス中",
+        "sensors": []
+      }
+    ],
+    "createdAt": "2024-01-01T00:00:00Z",
+    "updatedAt": "2024-01-01T00:00:00Z"
+  }
+]
