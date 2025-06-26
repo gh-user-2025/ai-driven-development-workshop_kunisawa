@@ -1,0 +1,26 @@
+{
+  "name": "ai-driven-development-workshop",
+  "version": "1.0.0",
+  "description": "AI駆動開発ワークショップのテンプレートプロジェクト",
+  "main": "main.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "dev": "vue-cli-service serve"
+  },
+  "keywords": [
+    "vue",
+    "workshop",
+    "ai-driven-development"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.0",
+    "@vue/compiler-sfc": "^3.3.0"
+  }
+}
