@@ -1,0 +1,33 @@
+{
+  "name": "factory-monitoring-ui",
+  "version": "1.0.0",
+  "description": "工場設備稼働監視システム フロントエンド",
+  "main": "main.js",
+  "scripts": {
+    "dev": "npx vue-cli-service serve",
+    "build": "npx vue-cli-service build",
+    "serve": "npm run dev"
+  },
+  "keywords": [
+    "vue",
+    "factory",
+    "monitoring",
+    "dashboard"
+  ],
+  "author": "Factory Monitoring Team",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.0",
+    "chart.js": "^4.4.0",
+    "vue-chartjs": "^5.3.0"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.8",
+    "webpack": "^5.89.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
